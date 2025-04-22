@@ -1,3 +1,10 @@
+import { drizzle } from 'drizzle-orm/better-sqlite3'
+import Database from 'better-sqlite3'
+import * as schema from './schema'
+
+const sqlite = new Database('sqlite.db') // update path if needed
+export const db = drizzle(sqlite, { schema })
+
 import { drizzle } from "drizzle-orm/sqlite-core";
 import Database from "sqlite3";
 import { users, consentRecords, fraudReports } from "./schema";
