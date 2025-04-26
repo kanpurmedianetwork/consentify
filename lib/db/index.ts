@@ -1,17 +1,9 @@
-import { drizzle } from 'drizzle-orm/better-sqlite3'
-import Database from 'better-sqlite3'
-import * as schema from './schema'
-
-const sqlite = new Database('sqlite.db') // update path if needed
-export const db = drizzle(sqlite, { schema })
-
 import { drizzle } from "drizzle-orm/sqlite-core";
-import Database from "sqlite3";
+import sqlite3 from "sqlite3";
 import { users, consentRecords, fraudReports } from "./schema";
 
-const sqlite = new Database.Database("./consentify.db");
-
-export const db = drizzle(sqlite);
+// Open SQLite database
+const sqlite = new sqlite3.Database("./consentify.db");
 
 // Initialize database tables
 sqlite.serialize(() => {
@@ -53,5 +45,8 @@ sqlite.serialize(() => {
     )
   `);
 });
+
+// Setup drizzle ORM
+export const db = drizzle(sqlite);
 
 export { users, consentRecords, fraudReports };
