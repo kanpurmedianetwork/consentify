@@ -44,12 +44,13 @@
     "aos": "^2.3.4",
     "autoprefixer": "10.4.15",
     "bcrypt": "^5.1.1",
+    "bcryptjs": "^3.0.2",
     "better-sqlite3": "^11.9.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "cmdk": "^1.0.0",
     "date-fns": "^3.6.0",
-    "drizzle-orm": "^0.30.4",
+    "drizzle-orm": "^0.30.10",
     "embla-carousel-react": "^8.3.0",
     "eslint": "8.49.0",
     "eslint-config-next": "13.5.1",
@@ -76,5 +77,21 @@
   },
   "devDependencies": {
     "@types/aos": "^3.0.7"
-  }
+  },
+  "description": "",
+  "main": "next.config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kanpurmedianetwork/consentify.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kanpurmedianetwork/consentify/issues"
+  },
+  "homepage": "https://github.com/kanpurmedianetwork/consentify#readme"
 }

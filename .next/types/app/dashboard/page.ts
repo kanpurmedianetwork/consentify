@@ -1,8 +1,8 @@
-// File: C:\Users\HP\Desktop\lol\consentify\app\redside\page.tsx
-import * as entry from '../../../../app/redside/page.js'
+// File: C:\Users\HP\Desktop\consentify_final\consentify\app\dashboard\page.tsx
+import * as entry from '../../../../app/dashboard/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../../app/redside/page.js')
+type TEntry = typeof import('../../../../app/dashboard/page.js')
 
 // Check that the entry is a valid entry
 checkFields<Diff<{

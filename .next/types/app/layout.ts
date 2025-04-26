@@ -1,4 +1,4 @@
-// File: C:\Users\HP\Desktop\lol\consentify\app\layout.tsx
+// File: C:\Users\HP\Desktop\consentify_final\consentify\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
